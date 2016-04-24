@@ -73,8 +73,8 @@ public class GUI extends JFrame implements Runnable{
 
 					File folders=new File(chooser.getSelectedFile().getPath());
 					String []labels=folders.list();
-					for(String lab:labels)
-					{
+					long startTime = System.currentTimeMillis();
+					for(String lab:labels) {
 						File folder=new File(chooser.getSelectedFile().getPath()+"/"+lab);
 						String []label=folder.list();
 						for(String filename:label)
@@ -95,6 +95,8 @@ public class GUI extends JFrame implements Runnable{
 					} catch (InterruptedException e1) {
 						e1.printStackTrace();
 					}
+					long endTime = System.currentTimeMillis();
+					System.out.println("测试费时："+(endTime-startTime)+"ms");
 					System.out.println(pos+" "+neg);
 				}else{
 					System.out.println("没有选中文件");

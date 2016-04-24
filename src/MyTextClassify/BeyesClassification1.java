@@ -4,13 +4,16 @@ import jeasy.analysis.MMAnalyzer;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.Token;
 import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.util.StringHelper;
+import org.wltea.analyzer.lucene.IKAnalyzer;
 
 import java.io.*;
 import java.sql.*;
 import java.util.*;
 
 public class BeyesClassification1 {
+	IKAnalyzer analyzer = null;
 	private String label = null;
 	private long trainTime = 0;
 	public String[] labelsName = null;
@@ -18,42 +21,24 @@ public class BeyesClassification1 {
 	public Set<String> vocabulary = new HashSet<String>();
 	public String trainPath = null;
 	public String testPath = null;
-	public HashSet<String> pos_dic= null;
-	public HashSet<String> neg_dic= null;
-	BeyesClassification1(){
-		pos_dic=new HashSet<String>();
-		neg_dic=new HashSet<String>();
+	public HashSet<String> dic= null;
+	BeyesClassification1() {
+		analyzer = new IKAnalyzer();
+		dic=new HashSet<String>();
 		String tempString=null;
-		String filename="./file/dic/ntusd-positive.txt";
-		BufferedReader reader = null;
+		String sql = "select * from dic ;";
+		String url="jdbc:mysql://localhost:3306/first?user=root&password=root&useUnicode=true&characterEncoding=UTF-8";
+		ResultSet resultSet=null;
 		try {
-			reader = new BufferedReader(new InputStreamReader(new FileInputStream(filename), Tools.getEncode(filename)));
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		} catch (FileNotFoundException e) {
+			Driver driver=new com.mysql.jdbc.Driver();
+			Connection conn = DriverManager.getConnection(url);
+			Statement statement = conn.createStatement();
+			resultSet = statement.executeQuery(sql);
+			while (resultSet.next())
+				dic.add(resultSet.getString("word").toString());
+		}catch (SQLException e) {
 			e.printStackTrace();
 		}
-		try {
-			while ((tempString=reader.readLine())!=null)
-                pos_dic.add(tempString);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		filename="./file/dic/ntusd-negative.txt";
-		try {
-			reader = new BufferedReader(new InputStreamReader(new FileInputStream(filename),Tools.getEncode(filename)));
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		try {
-			while ((tempString=reader.readLine())!=null)
-                neg_dic.add(tempString);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
 	}
 	public int findMax(double[] values) {
 		int index = 0;
@@ -101,31 +86,37 @@ public class BeyesClassification1 {
 		InputStreamReader isr=new InputStreamReader(new FileInputStream(f),"GBK");//utf8格式读取文件
 		char[] cbuf=new char[(int) f.length()];  //全文件装入内存
 		isr.read(cbuf); //读
-		Analyzer analyzer=new MMAnalyzer();  //分词器
+		//Analyzer analyzer=new MMAnalyzer();  //分词器
 		TokenStream tokens=analyzer.tokenStream("Contents", new StringReader(new String(cbuf)));
 		Token token=null;
 		ArrayList<String> v=new ArrayList<String>();
-		while((token=tokens.next(new Token()))!=null){
-			//if(pos_dic.contains(token.term())||neg_dic.contains(token.term()))
-			v.add(token.term());
+		while (tokens.incrementToken()) {
+			CharTermAttribute charTermAttribute = tokens.getAttribute(CharTermAttribute.class);
+			String string=charTermAttribute.toString();
+			if (dic.contains(string))
+				v.add(string);
 		}
+		/*查看分词结果
 		FileOutputStream a=new FileOutputStream(new File("out"),true);
 		PrintWriter out=new PrintWriter(a);
 		Iterator<String> iterator=v.iterator();
 		while (iterator.hasNext())
 			a.write((iterator.next()+" ").getBytes());
 		a.write("\n".getBytes());
+		*/
+
 		return v;
 	}
 	ArrayList<String> readArticle(String in) throws IOException {
-		Analyzer analyzer=new MMAnalyzer();
-		TokenStream tokens=analyzer.tokenStream("Contents",new StringReader(in));
-		Token token=null;
+		TokenStream tokens=analyzer.tokenStream("Contents", new StringReader(in));
 		ArrayList<String> v=new ArrayList<String>();
-		while ((token=tokens.next(new Token()))!=null) {
-			if (pos_dic.contains(token.term()) || neg_dic.contains(token.term()))
-				v.add(token.term());
+		while (tokens.incrementToken()) {
+			CharTermAttribute charTermAttribute = tokens.getAttribute(CharTermAttribute.class);
+			String string=charTermAttribute.toString();
+			if (dic.contains(string))
+				v.add(string);
 		}
+
 		return v;
 	}
 
@@ -304,6 +295,7 @@ public class BeyesClassification1 {
 		} else {
 			//System.out.println(testPath + " belongs to other");
 			label = "other";
+
 		}
 		//	GUI.setTextArea(testPath+" belongs to "+labelsName[maxIndex]);
 
@@ -317,14 +309,18 @@ public class BeyesClassification1 {
 			PrintStream f = new PrintStream(fb);
 			//p.println(100);
 			String[] temp = testPath.split("/");
+			double rate=values[0] / values[1] > (values[1] / values[0]) ? values[0] / values[1] : (values[1] / values[0]);
+			if(testPath.contains("pos.721.txt"))
+				String.valueOf('a');
 			if (!getLabelName().equals(temp[temp.length - 2])) {
 			/*System.out.println(testPath + " belongs to "+label);
 			for(double l :values)
 				System.out.println(l);*/
-				f.write((new Double(values[0] / values[1] > (values[1] / values[0]) ? values[0] / values[1] : (values[1] / values[0])).toString()+"\n").getBytes());
-			}else
-				t.write((new Double(values[0] / values[1] > (values[1] / values[0]) ? values[0] / values[1] : (values[1] / values[0])).toString()+"\n").getBytes());
-
+				if (rate>1000)
+					System.out.println(testPath+"    "+rate);
+				//f.write((new Double(rate).toString()+"\n").getBytes());
+			}//else
+				//t.write((new Double(rate).toString()+"\n").getBytes());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

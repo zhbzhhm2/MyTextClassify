@@ -25,9 +25,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="lucene-core-2.4.1.jar">
+      <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/lucene-core-2.4.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/com.mysql.jdbc_5.1.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -36,7 +36,16 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/com.mysql.jdbc_5.1.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/lucene-core-3.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/IKAnalyzer2012_u6.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

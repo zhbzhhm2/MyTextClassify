@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ff92e63-c9d0-47a0-934c-5726d04ea67d" name="Default" comment="" />
+    <list default="true" id="0ff92e63-c9d0-47a0-934c-5726d04ea67d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/IKAnalyzer2012_u6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification$Label.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification$WordItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/lucene-core-2.4.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification.class" afterPath="$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification1$Label.class" afterPath="$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification1$Label.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification1$WordItem.class" afterPath="$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification1$WordItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification1.class" afterPath="$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0" afterPath="$PROJECT_DIR$/0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1" afterPath="$PROJECT_DIR$/1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyTextClassify.iml" afterPath="$PROJECT_DIR$/MyTextClassify.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyTextClassify/BeyesClassification.java" afterPath="$PROJECT_DIR$/src/MyTextClassify/BeyesClassification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyTextClassify/BeyesClassification1.java" afterPath="$PROJECT_DIR$/src/MyTextClassify/BeyesClassification1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyTextClassify/GUI.java" afterPath="$PROJECT_DIR$/src/MyTextClassify/GUI.java" />
+    </list>
     <ignored path="MyTextClassify.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -23,16 +41,6 @@
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - first@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -43,8 +51,8 @@
       <file leaf-file-name="GUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyTextClassify/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="83" column="39" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="39" />
+            <state relative-caret-position="982">
+              <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,16 +63,69 @@
       <file leaf-file-name="BeyesClassification1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyTextClassify/BeyesClassification1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="108" selection-end-column="14" />
+            <state relative-caret-position="43">
+              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#train#0;class#BeyesClassification1#0" expanded="false" />
-                <marker date="1461423735982" expanded="true" signature="4758:4785" placeholder="select COUNT... missingValue" />
-                <marker date="1461423735982" expanded="true" signature="4758:4803" placeholder="select COUNT... missingValue_" />
-                <marker date="1461423735982" expanded="true" signature="4758:4808" placeholder="select COUNT... missingValue_train" />
-                <marker date="1461423735982" expanded="true" signature="4907:4927" placeholder="select conte... missingValue" />
-                <marker date="1461423735982" expanded="true" signature="4907:4950" placeholder="select conte... missingValue_train" />
+                <marker date="1461530130644" expanded="true" signature="892:909" placeholder="select * fro... dic" />
+                <marker date="1461530130644" expanded="true" signature="4532:4559" placeholder="select COUNT... missingValue" />
+                <marker date="1461530130644" expanded="true" signature="4532:4577" placeholder="select COUNT... missingValue_" />
+                <marker date="1461530130644" expanded="true" signature="4532:4582" placeholder="select COUNT... missingValue_train" />
+                <marker date="1461530130644" expanded="true" signature="4681:4701" placeholder="select conte... missingValue" />
+                <marker date="1461530130644" expanded="true" signature="4681:4724" placeholder="select conte... missingValue_train" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeyesClassification.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyTextClassify/BeyesClassification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="239" column="3" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1461526631324" expanded="false" signature="727:735" placeholder="&lt;~&gt;" />
+                <marker date="1461526631324" expanded="false" signature="2108:2116" placeholder="&lt;~&gt;" />
+                <marker date="1461526631324" expanded="false" signature="2997:3001" placeholder=" { " />
+                <marker date="1461526631324" expanded="false" signature="3021:3024" placeholder=" }" />
+                <marker date="1461526631324" expanded="false" signature="3065:3069" placeholder=" { " />
+                <marker date="1461526631324" expanded="false" signature="3086:3089" placeholder=" }" />
+                <marker date="1461526631324" expanded="false" signature="3591:3599" placeholder="&lt;~&gt;" />
+                <marker date="1461526631324" expanded="false" signature="4347:4365" placeholder="&lt;~&gt;" />
+                <marker date="1461526631324" expanded="false" signature="6387:6392" placeholder=" { " />
+                <marker date="1461526631324" expanded="false" signature="6405:6409" placeholder=" }" />
+                <marker date="1461526631324" expanded="false" signature="6441:6446" placeholder=" { " />
+                <marker date="1461526631324" expanded="false" signature="6463:6467" placeholder=" }" />
+                <marker date="1461526631324" expanded="false" signature="6556:6573" placeholder="&lt;~&gt;" />
+                <marker date="1461526631324" expanded="false" signature="7049:7097" placeholder="{...}" />
+                <marker date="1461526631324" expanded="false" signature="7142:7147" placeholder=" { " />
+                <marker date="1461526631324" expanded="false" signature="7172:7176" placeholder=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IKAnalyzer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/IKAnalyzer2012_u6.jar!/org/wltea/analyzer/lucene/IKAnalyzer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="33" column="51" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="51" />
+              <folding>
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#882#883#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IKTokenizer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/IKAnalyzer2012_u6.jar!/org/wltea/analyzer/lucene/IKTokenizer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,6 +139,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -87,8 +151,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/MyTextClassify/Tools.java" />
-        <option value="$PROJECT_DIR$/src/MyTextClassify/BeyesClassification.java" />
         <option value="$PROJECT_DIR$/src/MyTextClassify/Losted.java" />
+        <option value="$PROJECT_DIR$/src/MyTextClassify/BeyesClassification.java" />
         <option value="$PROJECT_DIR$/src/MyTextClassify/GUI.java" />
         <option value="$PROJECT_DIR$/src/MyTextClassify/BeyesClassification1.java" />
       </list>
@@ -110,9 +174,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="x" value="246" />
+    <option name="y" value="229" />
+    <option name="width" value="1016" />
+    <option name="height" value="500" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -145,7 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,6 +225,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MyTextClassify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyTextClassify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyTextClassify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -198,6 +276,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -207,13 +286,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MySQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/IKAnalyzer2012_u6.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
     </key>
@@ -730,11 +812,13 @@
       <workItem from="1461411044586" duration="7863000" />
       <workItem from="1461422586054" duration="721000" />
       <workItem from="1461423581574" duration="890000" />
+      <workItem from="1461500805954" duration="35000" />
+      <workItem from="1461512502797" duration="14482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45054000" />
+    <option name="totallyTimeSpent" value="59571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -746,7 +830,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="246" y="229" width="1016" height="500" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -757,17 +841,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27076924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18806647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09214502" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19656786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15729484" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29538462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4679803" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -789,7 +873,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MyTextClassify/BeyesClassification1.java</url>
+          <line>313</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -798,23 +890,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MyTextClassify/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6507">
-          <caret line="276" column="0" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MyTextClassify/BeyesClassification1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2985">
@@ -862,8 +937,7 @@
         <state relative-caret-position="2760">
           <caret line="206" column="24" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#WordItem#0;class#WordItem#0;class#BeyesClassification#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -932,8 +1006,7 @@
         <state relative-caret-position="4968">
           <caret line="206" column="24" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#WordItem#0;class#WordItem#0;class#BeyesClassification#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1002,8 +1075,7 @@
         <state relative-caret-position="3128">
           <caret line="206" column="24" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#WordItem#0;class#WordItem#0;class#BeyesClassification#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1058,8 +1130,7 @@
         <state relative-caret-position="3128">
           <caret line="206" column="24" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#WordItem#0;class#WordItem#0;class#BeyesClassification#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1123,17 +1194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyTextClassify/BeyesClassification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2376">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#WordItem#0;class#WordItem#0;class#BeyesClassification#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/MyTextClassify/BeyesClassification1.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-954">
@@ -1171,39 +1231,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/429fc8db/953c890a-de65-43ad-97cd-e764a76b84c5/first.pos">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="dbDummy://dbtable:/429fc8db/953c890a-de65-43ad-97cd-e764a76b84c5/first.pos" />
+    <entry file="jar://$PROJECT_DIR$/lib/IKAnalyzer2012_u6.jar!/org/wltea/analyzer/lucene/IKTokenizer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/IKAnalyzer2012_u6.jar!/org/wltea/analyzer/lucene/IKAnalyzer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="33" column="51" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="51" />
+          <folding>
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyTextClassify/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="83" column="39" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="39" />
+        <state relative-caret-position="982">
+          <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyTextClassify/BeyesClassification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="239" column="3" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1461526631324" expanded="false" signature="727:735" placeholder="&lt;~&gt;" />
+            <marker date="1461526631324" expanded="false" signature="2108:2116" placeholder="&lt;~&gt;" />
+            <marker date="1461526631324" expanded="false" signature="2997:3001" placeholder=" { " />
+            <marker date="1461526631324" expanded="false" signature="3021:3024" placeholder=" }" />
+            <marker date="1461526631324" expanded="false" signature="3065:3069" placeholder=" { " />
+            <marker date="1461526631324" expanded="false" signature="3086:3089" placeholder=" }" />
+            <marker date="1461526631324" expanded="false" signature="3591:3599" placeholder="&lt;~&gt;" />
+            <marker date="1461526631324" expanded="false" signature="4347:4365" placeholder="&lt;~&gt;" />
+            <marker date="1461526631324" expanded="false" signature="6387:6392" placeholder=" { " />
+            <marker date="1461526631324" expanded="false" signature="6405:6409" placeholder=" }" />
+            <marker date="1461526631324" expanded="false" signature="6441:6446" placeholder=" { " />
+            <marker date="1461526631324" expanded="false" signature="6463:6467" placeholder=" }" />
+            <marker date="1461526631324" expanded="false" signature="6556:6573" placeholder="&lt;~&gt;" />
+            <marker date="1461526631324" expanded="false" signature="7049:7097" placeholder="{...}" />
+            <marker date="1461526631324" expanded="false" signature="7142:7147" placeholder=" { " />
+            <marker date="1461526631324" expanded="false" signature="7172:7176" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MyTextClassify/BeyesClassification1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="108" selection-end-column="14" />
+        <state relative-caret-position="43">
+          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#train#0;class#BeyesClassification1#0" expanded="false" />
-            <marker date="1461423735982" expanded="true" signature="4758:4785" placeholder="select COUNT... missingValue" />
-            <marker date="1461423735982" expanded="true" signature="4758:4803" placeholder="select COUNT... missingValue_" />
-            <marker date="1461423735982" expanded="true" signature="4758:4808" placeholder="select COUNT... missingValue_train" />
-            <marker date="1461423735982" expanded="true" signature="4907:4927" placeholder="select conte... missingValue" />
-            <marker date="1461423735982" expanded="true" signature="4907:4950" placeholder="select conte... missingValue_train" />
+            <marker date="1461530130644" expanded="true" signature="892:909" placeholder="select * fro... dic" />
+            <marker date="1461530130644" expanded="true" signature="4532:4559" placeholder="select COUNT... missingValue" />
+            <marker date="1461530130644" expanded="true" signature="4532:4577" placeholder="select COUNT... missingValue_" />
+            <marker date="1461530130644" expanded="true" signature="4532:4582" placeholder="select COUNT... missingValue_train" />
+            <marker date="1461530130644" expanded="true" signature="4681:4701" placeholder="select conte... missingValue" />
+            <marker date="1461530130644" expanded="true" signature="4681:4724" placeholder="select conte... missingValue_train" />
           </folding>
         </state>
       </provider>
@@ -1265,7 +1361,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1285,6 +1380,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

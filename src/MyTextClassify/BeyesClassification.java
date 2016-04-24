@@ -19,8 +19,8 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.Token;
 import org.apache.lucene.analysis.TokenStream;
 
-public class BeyesClassification{
-	private String label=null;
+public class BeyesClassification{}
+	/*private String label=null;
 	private long trainTime=0;
 	public String[] labelsName=null;
 	public Vector<Label> labels=null;
@@ -237,4 +237,4 @@ public class BeyesClassification{
 		}
 	}
 
-}
+}*/
