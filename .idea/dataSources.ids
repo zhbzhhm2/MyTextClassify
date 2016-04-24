@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - first@localhost" uuid="953c890a-de65-43ad-97cd-e764a76b84c5">
+    <database-info product="MySQL" version="5.7.11-0ubuntu6" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="first"/>
+      <table id="2" parent="1" name="student"/>
+      <table id="3" parent="1" name="neg_train"/>
+      <table id="4" parent="1" name="pos_train"/>
+      <column id="5" parent="2" name="NO">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="6" parent="2" name="name">
+        <data-type>text</data-type>
+      </column>
+      <column id="7" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="8" parent="3" name="content">
+        <data-type>text</data-type>
+      </column>
+      <key id="9" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="10" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="11" parent="4" name="content">
+        <data-type>text</data-type>
+      </column>
+      <key id="12" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
