@@ -87,15 +87,7 @@ public class BeyesClassification1 {
 		char[] cbuf=new char[(int) f.length()];  //全文件装入内存
 		isr.read(cbuf); //读
 		//Analyzer analyzer=new MMAnalyzer();  //分词器
-		TokenStream tokens=analyzer.tokenStream("Contents", new StringReader(new String(cbuf)));
-		Token token=null;
-		ArrayList<String> v=new ArrayList<String>();
-		while (tokens.incrementToken()) {
-			CharTermAttribute charTermAttribute = tokens.getAttribute(CharTermAttribute.class);
-			String string=charTermAttribute.toString();
-			if (dic.contains(string))
-				v.add(string);
-		}
+		ArrayList<String> v= readArticle(new String(cbuf));
 		/*查看分词结果
 		FileOutputStream a=new FileOutputStream(new File("out"),true);
 		PrintWriter out=new PrintWriter(a);
@@ -310,7 +302,7 @@ public class BeyesClassification1 {
 			//p.println(100);
 			String[] temp = testPath.split("/");
 			double rate=values[0] / values[1] > (values[1] / values[0]) ? values[0] / values[1] : (values[1] / values[0]);
-			if(testPath.contains("pos.721.txt"))
+			if(testPath.contains("6299.txt"))
 				String.valueOf('a');
 			if (!getLabelName().equals(temp[temp.length - 2])) {
 			/*System.out.println(testPath + " belongs to "+label);
