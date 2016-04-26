@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/software/git/myJavaProject/MyTextClassify
+cd ~/software/git/MyTextClassify
 git add .
 if [ ! -n "$1" ] ;then
 	echo "提交原因未填写！"

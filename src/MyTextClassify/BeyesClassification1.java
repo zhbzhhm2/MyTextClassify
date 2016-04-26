@@ -302,8 +302,6 @@ public class BeyesClassification1 {
 			//p.println(100);
 			String[] temp = testPath.split("/");
 			double rate=values[0] / values[1] > (values[1] / values[0]) ? values[0] / values[1] : (values[1] / values[0]);
-			if(testPath.contains("6299.txt"))
-				String.valueOf('a');
 			if (!getLabelName().equals(temp[temp.length - 2])) {
 			/*System.out.println(testPath + " belongs to "+label);
 			for(double l :values)
